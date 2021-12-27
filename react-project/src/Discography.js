@@ -27,7 +27,7 @@ class Discography extends Component{
     render(){
         return (
             <div className="Discography">
-                <h1>Discography!!!!!!</h1>
+                <h1 className="Discography-title">Iron Maiden Discography</h1>
                 <div className="Discography-cards">
                     {this.props.record.map((r) => (
                         <Album albumName={r.albumName} albumYear={r.albumYear} albumCover={r.albumCover} />
