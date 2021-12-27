@@ -6,8 +6,8 @@ class Album extends Component {
         return(
             <div className="Album">
                 <img src={this.props.albumCover} alt={this.props.albumName}/>
-                <h2>{this.props.albumName}</h2>
-                <p>{this.props.albumYear}</p>
+                <h2 className="Album-title">{this.props.albumName}</h2>
+                <p className="Album-data">{this.props.albumYear}</p>
             </div>
         );
     }

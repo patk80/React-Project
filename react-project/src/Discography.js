@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Album from './Album';
+import './Discography.css';
 
 class Discography extends Component{
     static defaultProps = {
@@ -12,9 +13,11 @@ class Discography extends Component{
         return (
             <div className="Discography">
                 <h1>Discography!!!!!!</h1>
-                {this.props.record.map((r) => (
-                    <Album albumName={r.albumName} albumYear={r.albumYear} albumCover={r.albumCover} />
-                ))}
+                <div className="Discography-cards">
+                    {this.props.record.map((r) => (
+                        <Album albumName={r.albumName} albumYear={r.albumYear} albumCover={r.albumCover} />
+                    ))}
+                </div>
             </div>
         )
     }
