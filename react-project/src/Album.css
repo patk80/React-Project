@@ -1,4 +1,6 @@
 .Album {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     padding: 10px;
     margin: 1rem;
@@ -18,4 +20,5 @@
 
 .Album-data {
     font-style: italic;
+    margin-top: auto;
 }
