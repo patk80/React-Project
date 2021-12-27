@@ -8,6 +8,10 @@
     border-radius: 5px;
 }
 
+.Album-image {
+    width: 100%;
+}
+
 .Album-title {
     font-size: 30px;
 }
